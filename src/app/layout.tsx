@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Onborda, OnbordaProvider } from "onborda";
+import { steps } from "../lib/steps";
+
+import { TourCard } from "@/components/TourCard";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +17,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="p-4">
+        <OnbordaProvider>
+          <Onborda
+            steps={steps}
+            cardComponent={TourCard}
+            shadowOpacity="0.8"
+            cardTransition={{ type: "spring", stiffness: 100, damping: 10 }}
+          >
+            {children}
+          </Onborda>
+        </OnbordaProvider>
+      </body>
     </html>
   );
 }
