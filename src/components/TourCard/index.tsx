@@ -41,41 +41,57 @@ export const TourCard: React.FC<CardComponentProps> = ({
   }
 
   return (
-    <Card className="border-0 rounded w-max max-w-full z-[999]">
+    <Card className="relative border-0 min-w-[300px] w-max max-w-full z-[999] bg-white border-none">
       <CardHeader>
-        <div className="flex items-start justify-between w-full">
-          <div>
-            <CardTitle className="mb-2 text-lg">
-              {step.icon} {step.title}
-            </CardTitle>
-            <CardDescription>
+        <div className="flex items-start justify-between w-full space-x-4">
+          <div className="flex flex-col space-y-2">
+            <CardDescription className="text-black/50">
               {currentStep + 1} of {totalSteps}
             </CardDescription>
+            <CardTitle className="mb-2 text-lg text-black">
+              {step.icon} {step.title}
+            </CardTitle>
           </div>
-          <Button variant="ghost" size="icon" onClick={() => closeOnborda()}>
+          <Button
+            variant="ghost"
+            className="text-black/50 absolute top-4 right-2 hover:bg-transparent hover:text-black/80"
+            size="icon"
+            onClick={() => closeOnborda()}
+          >
             <X size={16} />
           </Button>
         </div>
       </CardHeader>
-      <CardContent>{step.content}</CardContent>
-      <CardFooter>
+      <CardContent className="text-black">{step.content}</CardContent>
+      <CardFooter className="text-black">
         <div className="flex justify-between w-full gap-4">
           {currentStep !== 0 && (
-            <Button onClick={() => prevStep()}>Previous</Button>
+            <Button
+              onClick={() => prevStep()}
+              className="bg-zinc-900 hover:bg-zinc-800 text-white hover:text-white"
+            >
+              Previous
+            </Button>
           )}
           {currentStep + 1 !== totalSteps && (
-            <Button onClick={() => nextStep()} className="ml-auto">
+            <Button
+              onClick={() => nextStep()}
+              className="bg-zinc-900 hover:bg-zinc-800 text-white hover:text-white ml-auto"
+            >
               Next
             </Button>
           )}
           {currentStep + 1 === totalSteps && (
-            <Button className="ml-auto" onClick={handleConfetti}>
+            <Button
+              className="bg-zinc-900 hover:bg-zinc-800 text-white hover:text-white ml-auto"
+              onClick={handleConfetti}
+            >
               🎉 Finish!
             </Button>
           )}
         </div>
       </CardFooter>
-      <span className="text-card">{arrow}</span>
+      <span className="text-white">{arrow}</span>
     </Card>
   );
 };
