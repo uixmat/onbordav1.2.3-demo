@@ -38,6 +38,9 @@ dependencies:
   next-themes:
     specifier: ^0.3.0
     version: 0.3.0(react-dom@18.3.1)(react@18.3.1)
+  onborda:
+    specifier: ^1.2.4
+    version: 1.2.4(@radix-ui/react-portal@1.1.1)(framer-motion@11.3.24)(next@14.2.5)(react-dom@18.3.1)(react@18.3.1)
   react:
     specifier: ^18
     version: 18.3.1
@@ -2598,6 +2601,22 @@ packages:
       define-properties: 1.2.1
       es-object-atoms: 1.0.0
     dev: true
+
+  /onborda@1.2.4(@radix-ui/react-portal@1.1.1)(framer-motion@11.3.24)(next@14.2.5)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-+yM/fX7DK3gHH1K12KwrDGqHRVY9OFPbkEEFY+BqralYr2eNwa2lPAsY9HlwREXwMDbVY286MjriMrIVhWcrAw==}
+    peerDependencies:
+      '@radix-ui/react-portal': '>=1.1.1'
+      framer-motion: '>=11'
+      next: '>=13'
+      react: '>=18'
+      react-dom: '>=18'
+    dependencies:
+      '@radix-ui/react-portal': 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
+      framer-motion: 11.3.24(react-dom@18.3.1)(react@18.3.1)
+      next: 14.2.5(react-dom@18.3.1)(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
 
   /once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
