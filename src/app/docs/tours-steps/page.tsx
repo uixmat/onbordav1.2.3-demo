@@ -25,8 +25,8 @@ export default function DocsToursSteps() {
   return (
     <>
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl m-auto py-24 px-6">
-          <div className="space-y-16 flex flex-col w-full col-span-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-full w-6xl m-auto py-24 px-3 lg:px-6">
+          <div className="space-y-16 flex flex-col w-full col-span-1 lg:col-span-4">
             <Card>
               <CardHeader>
                 <CardTitle>Navigation</CardTitle>
@@ -36,7 +36,7 @@ export default function DocsToursSteps() {
               </CardContent>
             </Card>
           </div>
-          <div className="space-y-8 flex flex-col w-full col-span-8">
+          <div className="space-y-16 flex flex-col w-full col-span-1 lg:col-span-8">
             <h2 className="font-semibold text-2xl">Tours &amp; steps</h2>
             <Card>
               <CardHeader>

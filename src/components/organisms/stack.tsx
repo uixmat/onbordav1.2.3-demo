@@ -10,7 +10,7 @@ export const Stack = () => {
         <h3 className="text-black dark:text-white text-lg font-extralight">
           Built with
         </h3>
-        <div className="flex items-center justify-center space-x-10">
+        <div className="grid grid-cols-2 lg:flex items-center justify-center space-x-3 lg:space-x-10">
           <div className="flex flex-col items-center justify-center space-y-3">
             <div className="aspect-square w-20 flex items-center justify-center">
               <Next className="w-16 h-16" />
