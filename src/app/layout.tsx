@@ -7,6 +7,7 @@ import "./globals.css";
 import { Onborda, OnbordaProvider } from "onborda";
 import { steps } from "../lib/steps";
 
+import { Toaster } from "@/components/ui/sonner";
 import { TourCard } from "@/components/tour";
 import { Header } from "@/components/organisms/header";
 
@@ -50,9 +51,10 @@ export default function RootLayout({
               cardTransition={{ type: "spring", stiffness: 100, damping: 10 }}
             >
               <Header />
-              <div className="space-y-16">{children}</div>
+              <div className="space-y-32">{children}</div>
             </Onborda>
           </OnbordaProvider>
+          <Toaster position="bottom-center" />
         </ThemeProvider>
       </body>
     </html>

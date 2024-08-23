@@ -4,6 +4,7 @@ import React from "react";
 // Components
 import { Hero } from "@/components/organisms/hero";
 import { Stack } from "@/components/organisms/stack";
+import { GetStarted } from "@/components/organisms/get-started";
 
 // Shadcn
 import { Button } from "@/components/ui/button";
@@ -31,6 +32,7 @@ export default function Home() {
         title="onborda"
         description="A modern product tour library for Next.js powered by Framer Motion"
       />
+      <GetStarted />
       <Stack />
       <div
         id="tours"

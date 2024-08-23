@@ -64,8 +64,12 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground bg-zinc-50 dark:bg-zinc-900;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

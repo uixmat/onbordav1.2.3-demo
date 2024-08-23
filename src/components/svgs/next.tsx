@@ -58,7 +58,7 @@ export const Next = ({ className }: Props) => {
           y2="106.875"
         >
           <stop stopColor="currentColor"></stop>
-          <stop offset="1" stopColor="currentColor" stop-opacity="0"></stop>
+          <stop offset="1" stopColor="currentColor" stopOpacity="0"></stop>
         </linearGradient>
       </defs>
     </svg>
