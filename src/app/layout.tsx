@@ -7,7 +7,7 @@ import "./globals.css";
 import { Onborda, OnbordaProvider } from "onborda";
 import { steps } from "../lib/steps";
 
-import { TourCard } from "@/components/tourcard";
+import { TourCard } from "@/components/tour";
 import { Header } from "@/components/organisms/header";
 
 export const metadata: Metadata = {
