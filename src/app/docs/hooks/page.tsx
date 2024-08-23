@@ -62,7 +62,8 @@ export default function DocsHooks() {
               </CardHeader>
               <CardContent>
                 <p>
-                  The <code>startOnborda</code> hook is used to start a tour.
+                  The <code>startOnborda</code> and <code>closeOnborda</code>{" "}
+                  hooks are used to start and stop a tour.
                 </p>
               </CardContent>
               <CodeBlock language="typescript" code={hook} />

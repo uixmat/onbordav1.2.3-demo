@@ -81,11 +81,11 @@ h1,h2,h3,h4,h5 {
   font-weight: 800;
 }
 
-code {
-  padding: 0.2rem 0.4rem;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+p {
+  font-size: 14px;
+}
+p code {
+  opacity: .65
 }
 
 .code-theme {
