@@ -80,3 +80,70 @@ h1,h2,h3,h4,h5 {
   font-family: var(--font-dm-sans);
   font-weight: 800;
 }
+
+code {
+  padding: 0.2rem 0.4rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.code-theme {
+  --syntax-string: #6D86A4;
+  --syntax-comment: #4f5572;
+  --syntax-variable: #868ad3;
+  --syntax-variable-2: #51D0F8;
+  --syntax-variable-3: #626B8B;
+  --syntax-number: #75D2B1;
+  --syntax-atom: #75D2B1;
+  --syntax-keyword: #34ffc7;
+  --syntax-property: #71828f;
+  --syntax-definition: #51D0F8;
+  --syntax-operator: #7DA9AB;
+  --syntax-attribute: #868ad3;
+  --syntax-tag: #7DA9AB;
+}
+
+.hljs-string {
+  color: var(--syntax-string);
+}
+
+.hljs-comment {
+  color: var(--syntax-comment);
+}
+
+.hljs-variable {
+  color: var(--syntax-variable);
+}
+
+.hljs-number {
+  color: var(--syntax-number);
+}
+
+.hljs-atom {
+  color: var(--syntax-atom);
+}
+
+.hljs-keyword {
+  color: var(--syntax-keyword);
+}
+
+.hljs-property {
+  color: var(--syntax-property);
+}
+
+.hljs-definition {
+  color: var(--syntax-definition);
+}
+
+.hljs-operator {
+  color: var(--syntax-operator);
+}
+
+.hljs-attribute {
+  color: var(--syntax-attribute);
+}
+
+.hljs-tag {
+  color: var(--syntax-tag);
+}

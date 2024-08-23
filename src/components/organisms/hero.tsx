@@ -4,7 +4,6 @@ import Link from "next/link";
 
 // shadcn
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 
 // assets
 import { Star, Wand2Icon, GitFork, Github, Loader } from "lucide-react";
