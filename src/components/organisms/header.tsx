@@ -8,10 +8,21 @@ export const Header = () => {
     <div className="w-full p-3 px-2 border-b border-border/20 fixed backdrop-blur-md z-50">
       <div className="container">
         <div className="flex justify-between items-center">
-          <Link href="/">
-            <h1 className="text-xl lg:text-2xl font-bold">Onborda</h1>
-          </Link>
-          <div className="flex space-x-4">
+          <div className="flex items-center space-x-3">
+            <Link href="/">
+              <h1 className="text-xl lg:text-2xl font-bold">Onborda</h1>
+            </Link>
+            <Button
+              variant="secondary"
+              size="icon"
+              className="w-min px-3"
+              asChild
+            >
+              <Link href="/docs">Docs</Link>
+            </Button>
+          </div>
+
+          <div className="flex items-center space-x-4">
             <Button variant="outline" size="icon" asChild>
               <a href="https://github.com/uixmat/onborda" target="_blank">
                 <GitHubLogoIcon />
