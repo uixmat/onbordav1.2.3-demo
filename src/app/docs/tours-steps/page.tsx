@@ -102,7 +102,7 @@ export default function DocsToursSteps() {
                       <TableCell>
                         <code>
                           &quot;top&quot;, &quot;bottom&quot;, &quot;left&quot;,
-                          &quot;right&quot;
+                          &quot;right&quot;top-left&quot;top-right&quot;bottom-left&quot;right-bottom&quot;right-top&quot;left-bottom&quot;left-top&quot;
                         </code>
                       </TableCell>
                     </TableRow>
